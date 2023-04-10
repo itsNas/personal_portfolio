@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "feather-icons": "^4.29.0",
+    "framer-motion": "^10.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
