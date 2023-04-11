@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  body {
+    @apply bg-stone-100 font-['Inter'] text-sm sm:text-base text-gray-700 font-normal leading-loose;
+  }
+
+  p {
+    @apply leading-loose;
+  }
+
+  a {
+    @apply transition-all ease-in duration-300;
+  }
+
+  h2 {
+    @apply pb-8 font-semibold text-2xl sm:text-3xl text-slate-400 text-center tracking-tighter;
+  }
+
+  button {
+    @apply transition-all ease-in duration-300;
+  }
+
+  button[type="submit"] {
+    @apply font-['Source_Code_Pro'] text-sm tracking-tight mx-auto flex items-center my-2 pl-6 py-3 border-2 border-gray-300 dark:border-gray-500 rounded hover:bg-[#94a3b81f] hover:border-slate-400;
+  }
+}
+
+@layer components {
+  /* NAVBAR COMPONENT */
+  .navbar li {
+    @apply font-['Source_Code_Pro'] text-sm text-slate-400 hover:text-gray-800 dark:hover:text-slate-200 cursor-pointer;
+  }
+
+  .navbar a.mobile-links {
+    @apply font-['Source_Code_Pro'] w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 dark:hover:text-slate-200 cursor-pointer text-base;
+  }
+
+  /* HOME COMPONENT */
+  #main a.home {
+    @apply text-slate-400 hover:text-gray-700 dark:hover:text-gray-200 cursor-pointer;
+  }
+
+  /* FOOTER COMPONENT */
+  footer .social li {
+    @apply px-6 py-3 flex justify-between items-center ml-[5px] hover:ml-[10px] text-gray-800 dark:text-gray-200 hover:text-slate-400 dark:hover:text-slate-400 cursor-pointer transition-all ease-in;
+  }
+
+  footer .mini-social li {
+    @apply p-3 inline-flex text-gray-800 hover:text-slate-400;
+  }
+}
+
+@layer utilities {
+  .dark {
+    @apply bg-slate-800 text-gray-200 transition-all ease-in duration-500;
+  }
+}
