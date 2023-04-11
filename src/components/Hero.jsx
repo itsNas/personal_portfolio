@@ -1,24 +1,21 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { ChevronsRight } from "react-feather";
-import DragonImg from "../assets/background/dragon.png";
-import DarkDragonImg from "../assets/background/dark-dragon.png";
-const Hero = ({ darkMode }) => {
+import HTML from "../assets/tech/html.png";
+import CSS from "../assets/tech/css.png";
+import JS from "../assets/tech/javascript.png";
+import REACT from "../assets/tech/reactjs.png";
+import TW from "../assets/tech/tailwind.png";
+import NODE from "../assets/tech/nodejs.png";
+import GIT from "../assets/tech/git.png";
+
+const Hero = () => {
   return (
-    <section id="main" className="w-full h-screen">
-      {/* <motion.img
-        className="w-full h-screen flex object-contain object-top md:object-cover md:object-center lg:object-right"
-        src={darkMode ? DarkDragonImg : DragonImg}
-        alt="Sketch of a dragon"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 4, delay: 0.5 }}
-        viewport={{ once: true }}
-      /> */}
+    <section id="hero" className="w-full h-screen">
       <div className="w-full h-screen absolute top-[70px] left-0">
         <div className="max-w-screen-md w-full h-full m-auto md:ml-20 lg:ml-48 px-8 flex flex-col justify-center items-start">
           <motion.h3
-            className="font-medium text-gray-500 text-lg sm:text-2xl tracking-tight"
+            className="font-medium  text-lg sm:text-2xl tracking-tight"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -27,7 +24,7 @@ const Hero = ({ darkMode }) => {
             Hello there, I'm
           </motion.h3>
           <motion.h1
-            className="pt-1 font-semibold text-4xl sm:text-5xl text-gray-800 dark:text-slate-100 tracking-tighter"
+            className="pt-1 font-semibold text-4xl sm:text-5xl  tracking-tighter"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.75 }}
@@ -36,7 +33,7 @@ const Hero = ({ darkMode }) => {
             Nasrullah Saloji
           </motion.h1>
           <motion.h3
-            className="font-['Source_Code_Pro'] flex pt-4 text-gray-800 dark:text-slate-100 text-2xl sm:text-3xl"
+            className="font-['Source_Code_Pro'] flex pt-4  text-2xl sm:text-3xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
@@ -44,14 +41,7 @@ const Hero = ({ darkMode }) => {
           >
             A
             <TypeAnimation
-              sequence={[
-                "Frontend Developer",
-                2000, // waits 2s
-                "React Developer",
-                2000,
-                "Freelancer",
-                2000,
-              ]}
+              sequence={["React Developer", 2000, "Freelancer", 2000]}
               wrapper="div"
               cursor={true}
               repeat={Infinity}
@@ -65,18 +55,36 @@ const Hero = ({ darkMode }) => {
             transition={{ duration: 0.5, delay: 1.25 }}
             viewport={{ once: true }}
           >
-            I am a full-stack software engineer living in Kedah, Malaysia with a
+            I am a frontend React developer living in Kedah, Malaysia with a
             passion for technologies. I love to build and design things like web
             application.
           </motion.p>
           <motion.div
-            className="w-full flex items-center justify-between"
+            className=" flex flex-col gap-2 sm:flex-row items-center justify-start w-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
             viewport={{ once: true }}
           >
-            <a href="/Demi-Hayashi-CV.pdf">
+            <p>Tech stack | </p>
+            <div className="flex gap-3 flex-wrap">
+              <img src={HTML} alt="html" />
+              <img src={CSS} alt="html" />
+              <img src={JS} alt="html" />
+              <img src={REACT} alt="html" />
+              <img src={TW} alt="html" />
+              <img src={NODE} alt="html" />
+              <img src={GIT} alt="html" />
+            </div>
+          </motion.div>
+          <motion.div
+            className="mt-3 w-full flex items-center justify-between"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.75 }}
+            viewport={{ once: true }}
+          >
+            <a href="/nasrullah-CV.pdf">
               <button type="submit" className="group w-[160px]">
                 Download CV
                 <span className="group-hover:text-slate-400 group-hover:ml-1 duration-300">
