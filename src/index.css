@@ -47,7 +47,7 @@
   }
 
   /* HOME COMPONENT */
-  #main a.home {
+  #hero a.home {
     @apply text-slate-400 hover:text-gray-700 dark:hover:text-gray-200 cursor-pointer;
   }
 
@@ -63,6 +63,6 @@
 
 @layer utilities {
   .dark {
-    @apply bg-slate-800 text-gray-200 transition-all ease-in duration-500;
+    @apply bg-slate-800 text-gray-200 transition-all ease-in duration-1000;
   }
 }

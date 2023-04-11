@@ -37,21 +37,20 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const handleNav = () => setNav(!nav);
 
   // shadow effect on navbar on scroll
-  // const [top, setTop] = useState(true);
-  // useEffect(() => {
-  //   const scrollHandler = () => {
-  //     window.pageYOffset > 10 ? setTop(false) : setTop(true);
-  //   };
-  //   window.addEventListener("scroll", scrollHandler);
-  //   return () => window.removeEventListener("scroll", scrollHandler);
-  // }, [top]);
+  const [top, setTop] = useState(true);
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.pageYOffset > 10 ? setTop(false) : setTop(true);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
 
   return (
     <section
-      className={`sticky ${scrollDirection === "down" ? "-top-0" : "top-0"} ${
-        !top &&
-        `shadow-lg bg-stone-100/80 dark:bg-slate-800/80 dark:shadow-gray-900 backdrop-blur-md`
-      } h-[70px] bg-stone-100 dark:bg-slate-800 transition-all duration-500 z-[99]`}
+      className={`sticky top-0 ${
+        !top && `shadow-lg backdrop-blur-md`
+      } h-[70px] transition-all duration-500 z-[99]`}
     >
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
         <motion.div
@@ -97,8 +96,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               transition={{ duration: 0.4, delay: 3.5 }}
               viewport={{ once: true }}
             >
-              <a href="#project" className="mx-6">
-                Project
+              <a href="#projects" className="mx-6">
+                Projects
               </a>
             </motion.li>
             <motion.li
@@ -130,12 +129,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         {/* HAMBURGER MENU AT 768PX & LOWER */}
         <div
           onClick={handleNav}
-          className={`md:hidden transition-all ease-in duration-100 z-20`}
+          className={`md:hidden transition-all ease-in duration-500 z-20`}
         >
           {!nav ? (
             <Menu
               size={30}
-              className="hover:text-slate-400 transition-all ease-in duration-50 cursor-pointer"
+              className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer"
             />
           ) : (
             ""
@@ -144,11 +143,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <motion.div
               className={`fixed ${
                 scrollDirection === "down" ? "top-[70px]" : "top-0"
-              } right-0 w-full h-screen shadow-lg bg-stone-100/80 dark:bg-slate-800/90 dark:shadow-gray-900 backdrop-blur-md z-[1]`}
+              } right-0 w-full h-screen backdrop-blur-lg z-[1]`}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
               <div className="w-full h-[70px] px-6 flex justify-end items-center">
