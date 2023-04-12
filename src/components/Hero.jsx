@@ -55,9 +55,9 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 1.25 }}
             viewport={{ once: true }}
           >
-            I am a frontend React developer living in Kedah, Malaysia with a
-            passion for technologies. I love to build and design things like web
-            application.
+            I am a frontend React developer based in Kedah, Malaysia who is
+            passionate about technologies. I enjoy creating and designing web
+            applications.
           </motion.p>
           <motion.div
             className=" flex flex-col gap-2 sm:flex-row items-center justify-start w-full "
