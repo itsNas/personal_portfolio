@@ -49,7 +49,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <section
       className={`sticky top-0 ${
-        !top && `shadow-lg backdrop-blur-md`
+        !top && `shadow-lg backdrop-blur-lg bg-stone-100 dark:bg-slate-800`
       } h-[70px] transition-all duration-500 z-[99]`}
     >
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
@@ -134,7 +134,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           {!nav ? (
             <Menu
               size={30}
-              className="hover:text-slate-400 transition-all ease-in duration-300 cursor-pointer"
+              className="hover:text-slate-400 transition-all ease-in duration-3000 cursor-pointer"
             />
           ) : (
             ""
