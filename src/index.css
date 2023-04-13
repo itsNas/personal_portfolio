@@ -65,4 +65,8 @@
   .dark {
     @apply bg-slate-800 text-gray-200 transition-all ease-in duration-1000;
   }
+
+  #tsparticles {
+    @apply h-screen absolute left-0 right-0 m-0 p-0 z-0;
+  }
 }

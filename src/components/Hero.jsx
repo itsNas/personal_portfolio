@@ -8,11 +8,14 @@ import REACT from "../assets/tech/reactjs.png";
 import TW from "../assets/tech/tailwind.png";
 import NODE from "../assets/tech/nodejs.png";
 import GIT from "../assets/tech/git.png";
+import ParticlesBackground from "./ParticlesBackground";
 // import { ComputersCanvas } from "./canvas/Computers";
 
 const Hero = () => {
   return (
     <section id="hero" className="w-full h-screen">
+      <ParticlesBackground id="tsparticles" />
+
       <div className="w-full h-screen absolute top-[70px] left-0">
         <div className="max-w-screen-md w-full h-full m-auto md:ml-20 lg:ml-48 px-8 flex flex-col justify-center items-start">
           <motion.h3
@@ -61,7 +64,7 @@ const Hero = () => {
             applications.
           </motion.p>
           <motion.div
-            className=" flex flex-col gap-2 sm:flex-row items-center justify-start w-full "
+            className=" flex flex-col gap-2 sm:flex-row items-center justify-start w-full mt-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
@@ -79,7 +82,7 @@ const Hero = () => {
             </div>
           </motion.div>
           <motion.div
-            className="mt-3 w-full flex items-center justify-between"
+            className="flex items-center justify-center  sm:justify-between mt-8 w-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.75 }}
