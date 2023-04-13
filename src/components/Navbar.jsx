@@ -59,12 +59,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           transition={{ duration: 1, delay: 2.75 }}
           viewport={{ once: true }}
         >
-          <a href="/">
+          <a className="flex items-center gap-4" href="/">
             <img
               src={Logo}
               alt="DH"
               className="h-10 hover:opacity-75 transition-all ease-in duration-300 cursor-pointer"
             />
+            <p className=" font-extrabold">Nasrullah.dev</p>
           </a>
         </motion.div>
         {/* NAVBAR AT 768PX & ABOVE */}
