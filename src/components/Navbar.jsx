@@ -56,7 +56,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 3, delay: 3 }}
+          transition={{ duration: 1, delay: 2.75 }}
           viewport={{ once: true }}
         >
           <a href="/">
