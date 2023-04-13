@@ -9,14 +9,14 @@ import TW from "../assets/tech/tailwind.png";
 import NODE from "../assets/tech/nodejs.png";
 import GIT from "../assets/tech/git.png";
 import ParticlesBackground from "./ParticlesBackground";
-// import { ComputersCanvas } from "./canvas/Computers";
+import Developer from "../assets/background/developer.svg";
+import DeveloperDark from "../assets/background/developer-dark.svg";
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   return (
     <section id="hero" className="w-full h-screen">
       <ParticlesBackground id="tsparticles" />
-
-      <div className="w-full h-screen absolute top-[70px] left-0">
+      <div className="flex flex-col md:flex-row    absolute mt-20 md:mt-0">
         <div className="max-w-screen-md w-full h-full m-auto md:ml-20 lg:ml-48 px-8 flex flex-col justify-center items-start">
           <motion.h3
             className="font-medium  text-lg sm:text-2xl tracking-tight"
@@ -63,15 +63,15 @@ const Hero = () => {
             passionate about technologies. I enjoy creating and designing web
             applications.
           </motion.p>
-          <motion.div
-            className=" flex flex-col gap-2 sm:flex-row items-center justify-start w-full mt-8"
+          {/* <motion.div
+            className=" flex flex-col gap-2 mt-2 sm:flex-row items-center justify-start w-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
             viewport={{ once: true }}
           >
             <p>Tech stack | </p>
-            <div className="flex gap-3 flex-wrap">
+            <div className="tech flex gap-3 flex-wrap">
               <img src={HTML} alt="html" />
               <img src={CSS} alt="html" />
               <img src={JS} alt="html" />
@@ -80,9 +80,9 @@ const Hero = () => {
               <img src={NODE} alt="html" />
               <img src={GIT} alt="html" />
             </div>
-          </motion.div>
+          </motion.div> */}
           <motion.div
-            className="flex items-center justify-center  sm:justify-between mt-8 w-full "
+            className="flex items-center justify-center sm:justify-between mt-0 sm:mt-8 w-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.75 }}
@@ -102,10 +102,18 @@ const Hero = () => {
             </a>
           </motion.div>
         </div>
+        <div>
+          <motion.img
+            className="w-full h-1/2 mt-0 sm:w-full text-right float-right md:h-screen"
+            src={darkMode ? DeveloperDark : Developer}
+            alt="Developer"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 4, delay: 0.5 }}
+            viewport={{ once: true }}
+          />
+        </div>
       </div>
-      {/* <div>
-        <ComputersCanvas />
-      </div> */}
     </section>
   );
 };

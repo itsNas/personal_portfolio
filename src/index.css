@@ -47,7 +47,7 @@
   }
 
   /* HOME COMPONENT */
-  #hero img {
+  #hero .tech img {
     @apply h-10 m-1 sm:h-10;
   }
 
