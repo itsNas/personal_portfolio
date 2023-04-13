@@ -47,9 +47,9 @@
   }
 
   /* HOME COMPONENT */
-  #hero .tech img {
+  /* #about .tech img {
     @apply h-10 m-1 sm:h-10;
-  }
+  } */
 
   /* FOOTER COMPONENT */
   footer .social li {

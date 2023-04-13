@@ -1,13 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { ChevronsRight } from "react-feather";
-import HTML from "../assets/tech/html.png";
-import CSS from "../assets/tech/css.png";
-import JS from "../assets/tech/javascript.png";
-import REACT from "../assets/tech/reactjs.png";
-import TW from "../assets/tech/tailwind.png";
-import NODE from "../assets/tech/nodejs.png";
-import GIT from "../assets/tech/git.png";
 import ParticlesBackground from "./ParticlesBackground";
 import Developer from "../assets/background/developer.svg";
 import DeveloperDark from "../assets/background/developer-dark.svg";
@@ -63,26 +56,9 @@ const Hero = ({ darkMode }) => {
             passionate about technologies. I enjoy creating and designing web
             applications.
           </motion.p>
-          {/* <motion.div
-            className=" flex flex-col gap-2 mt-2 sm:flex-row items-center justify-start w-full "
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
-            viewport={{ once: true }}
-          >
-            <p>Tech stack | </p>
-            <div className="tech flex gap-3 flex-wrap">
-              <img src={HTML} alt="html" />
-              <img src={CSS} alt="html" />
-              <img src={JS} alt="html" />
-              <img src={REACT} alt="html" />
-              <img src={TW} alt="html" />
-              <img src={NODE} alt="html" />
-              <img src={GIT} alt="html" />
-            </div>
-          </motion.div> */}
+
           <motion.div
-            className="flex items-center justify-center sm:justify-between mt-0 sm:mt-8 w-full "
+            className="flex items-center justify-center sm:justify-between mt-1 sm:mt-8 w-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.75 }}
