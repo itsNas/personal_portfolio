@@ -8,6 +8,7 @@ import REACT from "../assets/tech/reactjs.png";
 import TW from "../assets/tech/tailwind.png";
 import NODE from "../assets/tech/nodejs.png";
 import GIT from "../assets/tech/git.png";
+// import { ComputersCanvas } from "./canvas/Computers";
 
 const Hero = () => {
   return (
@@ -99,9 +100,9 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      <div>
-        <ModelCanvas />
-      </div>
+      {/* <div>
+        <ComputersCanvas />
+      </div> */}
     </section>
   );
 };

@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <main className={`${darkMode ? "dark" : ""}`}>
-      <ParticlesBackground />
+      {/* <ParticlesBackground /> */}
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero darkMode={darkMode} />
       <About />
