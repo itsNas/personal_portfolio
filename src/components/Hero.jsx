@@ -99,6 +99,9 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
+      <div>
+        <ModelCanvas />
+      </div>
     </section>
   );
 };
