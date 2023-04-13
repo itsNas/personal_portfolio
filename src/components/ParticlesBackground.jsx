@@ -16,16 +16,16 @@ const ParticlesBackground = (props) => {
         detectsOn: "canvas",
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onDiv: {
             elementId: "repulse-div",
-            enable: true,
+            enable: false,
             mode: "repulse",
           },
           onHover: {
-            enable: true,
+            enable: false,
             mode: "bubble",
             parallax: {
               enable: false,
@@ -178,7 +178,7 @@ const ParticlesBackground = (props) => {
         image: "",
         position: "50% 50%",
         repeat: "no-repeat",
-        size: "cover",
+        // size: "cover",
       },
       fullScreen: {
         enable: true,

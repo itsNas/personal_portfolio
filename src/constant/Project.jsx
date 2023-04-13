@@ -5,6 +5,7 @@ import WeatherImg from "../assets/portfolio/weatherApp.png";
 
 const projects = [
   {
+    id: "todolist",
     title: "Todo list",
     thumbnail: TodolistImg,
     description: "A todo list application built with React",
@@ -13,7 +14,8 @@ const projects = [
     github: "https://github.com/nasrul-o7/React-todolist-app",
   },
   {
-    title: "Todo list",
+    id: "weatherapp",
+    title: "Weather app",
     thumbnail: WeatherImg,
     description: "A weather dashboard application built with OpenWeather API",
     technologies: "CSS / RapidApi / ReactJS / NodeJS",
@@ -60,7 +62,7 @@ const Project = () => {
     >
       {projects.map((project) => (
         <motion.article
-          key={project}
+          key={project.id}
           className="relative group"
           variants={animateProjectItem}
           viewport={{ once: true }}
@@ -73,9 +75,9 @@ const Project = () => {
             />
 
             <div className="flex rounded-lg justify-center items-center transition-all duration-700 opacity-0 bg-gradient-to-t from-[#222222] via-slate-600 to-opacity-30 group-hover:opacity-90 absolute top-0 left-0 h-full w-full">
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end opacity-0 hover:opacity-100">
-                <div class="flex-row text-center p-6">
-                  <h3 className="mb-2 font-semibold text-sky-200 text-2xl uppercase drop-shadow-md tracking-tighter">
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end opacity-0 hover:opacity-100">
+                <div className="flex-row text-center p-6">
+                  <h3 className="mb-2 font-semibold text-white  text-2xl uppercase drop-shadow-md tracking-tighter">
                     {project.title}
                   </h3>
                   <p className="text-white text-sm tracking-tight leading-snug drop-shadow-md">

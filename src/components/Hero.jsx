@@ -84,7 +84,11 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 1.75 }}
             viewport={{ once: true }}
           >
-            <a href="/nasrullah-CV.pdf">
+            <a
+              href="https://drive.google.com/file/d/1cYpo4wVlqAATPBpdvKm4KOgeGjtMkLvq/view?usp=share_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button type="submit" className="group w-[160px]">
                 Download CV
                 <span className="group-hover:text-slate-400 group-hover:ml-1 duration-300">
