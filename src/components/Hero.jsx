@@ -9,7 +9,7 @@ const Hero = ({ darkMode }) => {
   return (
     <section id="hero" className="w-full h-screen">
       <ParticlesBackground id="tsparticles" />
-      <div className="flex flex-col md:flex-row    absolute mt-20 md:mt-0">
+      <div className="flex flex-col sm:flex-row    absolute mt-20 md:mt-0">
         <div className="max-w-screen-md w-full h-full m-auto md:ml-20 lg:ml-48 px-8 flex flex-col justify-center items-start">
           <motion.h3
             className="font-medium  text-lg sm:text-2xl tracking-tight"
@@ -80,7 +80,7 @@ const Hero = ({ darkMode }) => {
         </div>
         <div>
           <motion.img
-            className="absolute w-full h-3/4 mt-0 sm:w-full text-right float-right md:h-screen"
+            className="w-full mt-0 sm:w-full text-right float-right absolute sm:relative h-64 md:h-screen"
             src={darkMode ? DeveloperDark : Developer}
             alt="Developer"
             initial={{ opacity: 0 }}
