@@ -80,7 +80,7 @@ const Hero = ({ darkMode }) => {
         </div>
         <div>
           <motion.img
-            className="w-full h-1/2 mt-0 sm:w-full text-right float-right md:h-screen"
+            className="absolute w-full h-3/4 mt-0 sm:w-full text-right float-right md:h-screen"
             src={darkMode ? DeveloperDark : Developer}
             alt="Developer"
             initial={{ opacity: 0 }}
