@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, GitHub } from "react-feather";
 import TodolistImg from "../assets/portfolio/todolist.png";
 import WeatherImg from "../assets/portfolio/weatherApp.png";
+import CoffeeImg from "../assets/portfolio/coffee.png";
 
 const projects = [
   {
@@ -21,6 +22,15 @@ const projects = [
     technologies: "CSS / RapidApi / ReactJS / NodeJS",
     url: "https://nas-weather-app.netlify.app/",
     github: "https://github.com/nasrul-o7/react-weather-app",
+  },
+  {
+    id: "coffee",
+    title: "Kona Coffee Website",
+    thumbnail: CoffeeImg,
+    description: "A responsive website built with ReactJS, Vite, Tailwind",
+    technologies: "Tailwind / Vite / ReactJS / NodeJS",
+    url: "https://konakopi.vercel.app/",
+    github: "https://github.com/nasrul-o7/coffee_website",
   },
 ];
 
