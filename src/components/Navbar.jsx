@@ -70,7 +70,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </motion.div>
         {/* NAVBAR AT 768PX & ABOVE */}
         <div>
-          <ul>
+          <ul className="hidden md:flex md:items-center list-none">
             <motion.li
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
