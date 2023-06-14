@@ -65,8 +65,8 @@ const Hero = ({ darkMode }) => {
             viewport={{ once: true }}
           >
             <a
-              href="https://drive.google.com/file/d/1cYpo4wVlqAATPBpdvKm4KOgeGjtMkLvq/view?usp=share_link"
-              target="_blank"
+              href="/NASRULLAH_SALOJI_Resume.pdf"
+              target="blank"
               rel="noopener noreferrer"
             >
               <button type="submit" className="group w-[160px]">
