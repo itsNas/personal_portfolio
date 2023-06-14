@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -21,6 +22,7 @@ function App() {
       <Portfolio />
       <Contact />
       <Footer />
+      <Analytics />
     </main>
   );
 }
