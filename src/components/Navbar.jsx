@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Menu, X, Sun, Moon } from "react-feather";
 import Logo from "../assets/logo/logo-no-background.svg";
 
-function handleScroll() {
+const handleScroll = () => {
   const [scrollDirection, setScrollDirection] = useState(null);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function handleScroll() {
   }, [scrollDirection]);
 
   return scrollDirection;
-}
+};
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const scrollDirection = handleScroll();
@@ -70,7 +70,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </motion.div>
         {/* NAVBAR AT 768PX & ABOVE */}
         <div>
-          <ul className="hidden md:flex md:items-center list-none">
+          <ul>
             <motion.li
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
