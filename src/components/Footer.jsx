@@ -8,7 +8,7 @@ const Footer = () => {
         <p>
           Made by{" "}
           <a
-            href="https://github.com/nasrul-o7"
+            href="https://github.com/itsNas"
             target="_blank"
             className="text-slate-400 hover:text-gray-700"
           >
@@ -31,7 +31,7 @@ const Footer = () => {
             transition={{ duration: 0.4, delay: 1.75 }}
             viewport={{ once: true }}
           >
-            <a href="https://github.com/nasrul-o7" target="_blank">
+            <a href="https://github.com/itsNas" target="_blank">
               <GitHub size={30} />
             </a>
           </motion.li>
@@ -66,7 +66,7 @@ const Footer = () => {
       <div className="mini-social">
         <ul className="md:hidden flex flex-row justify-center">
           <li>
-            <a href="https://github.com/nasrul-o7" target="_blank">
+            <a href="https://github.com/itsNas" target="_blank">
               <GitHub size={24} />
             </a>
           </li>
