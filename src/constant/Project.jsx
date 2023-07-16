@@ -11,8 +11,8 @@ const projects = [
     thumbnail: TodolistImg,
     description: "A todo list application built with React",
     technologies: "CSS / Firebase / ReactJS / NodeJS",
-    url: "https://nas-todo.netlify.app/",
-    github: "https://github.com/nasrul-o7/React-todolist-app",
+    url: "https://todolistnas.vercel.app/",
+    github: "https://github.com/itsNas/React-todolist-app",
   },
   {
     id: "weatherapp",
@@ -20,8 +20,8 @@ const projects = [
     thumbnail: WeatherImg,
     description: "A weather dashboard application built with OpenWeather API",
     technologies: "CSS / RapidApi / ReactJS / NodeJS",
-    url: "https://nas-weather-app.netlify.app/",
-    github: "https://github.com/nasrul-o7/react-weather-app",
+    url: "https://weathernas.vercel.app/",
+    github: "https://github.com/itsNas/react-weather-app",
   },
   {
     id: "coffee",
@@ -30,7 +30,7 @@ const projects = [
     description: "A responsive website built with ReactJS, Vite, Tailwind",
     technologies: "Tailwind / Vite / ReactJS / NodeJS",
     url: "https://konakopi.vercel.app/",
-    github: "https://github.com/nasrul-o7/coffee_website",
+    github: "https://github.com/itsNas/coffee_website",
   },
 ];
 
