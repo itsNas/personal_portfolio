@@ -20,7 +20,7 @@ const About = () => {
           <motion.img
             src={AboutImg}
             className="shadow-lg dark:shadow-gray-900 rounded-full"
-            alt="Hi, I'm Demi!"
+            alt="Hi, I'm Nas!"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.75 }}
