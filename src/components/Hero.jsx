@@ -65,7 +65,7 @@ const Hero = ({ darkMode }) => {
             viewport={{ once: true }}
           >
             <a
-              href="/NASRULLAH_SALOJI_Resume.pdf"
+              href="/NASRULLAH_SALOJI.pdf"
               target="blank"
               rel="noopener noreferrer"
             >
